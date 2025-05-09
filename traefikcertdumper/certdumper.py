@@ -61,7 +61,7 @@ def dumpcerts():
         acme_json = json.load(f)
 
     try:
-        cert_resolver = 'le'
+        cert_resolver = 'default'
         if len(acme_json.keys()) != 1:
             print('ERROR: invalid acme.json file')
             sys.exit(1)
